@@ -220,7 +220,7 @@ export function defaultRubric(): Rubric {
   return {
     version: '1.0.0',
     name: '音乐推荐质量评分标准',
-    created_at: now(),
+    created_at: '2026-11-11T00:00:00.000Z',
     required_songs: 12,
     dimensions: names.map((name, i) => ({
       id: ['scene', 'preference', 'quality', 'coherence', 'expression'][i],

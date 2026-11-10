@@ -42,7 +42,14 @@ const ratings = (scores: (number | 'NA' | null)[] = [3, 4, 5, 2, 1]): Record<str
   );
 function setup(): Workspace {
   const w = initialWorkspace();
-  w.cases.push(caseSchema.parse({ case_id: 'C1', scene: '通勤', songs: [] }));
+  w.cases.push(
+    caseSchema.parse({
+      case_id: 'C1',
+      scene: '通勤',
+      songs: [],
+      created_at: '2026-11-11T00:00:00.000Z',
+    }),
+  );
   w.reviewers = [
     { id: 'a', name: '人员 A', role: 'annotator' },
     { id: 'b', name: '人员 B', role: 'annotator' },
